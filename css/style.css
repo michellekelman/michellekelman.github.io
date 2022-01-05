@@ -49,6 +49,7 @@ html, body {
 
 .intro {
     border-color: rgba(255, 0, 102, 1);
+    border: blue;
 }
 
 .contact {
