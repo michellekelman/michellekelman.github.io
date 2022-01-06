@@ -35,7 +35,17 @@ html, body {
     align-items: center;
 }
 
-@media screen and (min-width: 950px) and (min-height: 1000px) {
+@media screen and (min-width: 1000px) and (min-height: 850px) {
+    .wrapper {
+        width: 50%;
+        height: 90%;
+        margin: 30px;
+    
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1100px) and (min-height: 750px) {
     .wrapper {
         width: 50%;
         height: 90%;
@@ -87,7 +97,7 @@ html, body {
     justify-content: center;
 }
 
-@media screen and (min-width: 950px) and (min-height: 1000px) {
+@media screen and (min-width: 850px) {
     .aboutme {
         flex-direction: row;
         justify-content: center;
