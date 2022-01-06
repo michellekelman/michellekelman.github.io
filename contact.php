@@ -1,12 +1,12 @@
 <?php
-    if($_POST) {
+    if($_GET) {
         $email_to = "michelle.r.kelman@gmail.com";
         $email_subject = "Personal Website Contact Form";
 
-        $username = $_POST['username'];
-        $useremail = $_POST['useremail'];
-        $userreason = $_POST['userreason'];
-        $usermessage = $_POST['usermessage'];
+        $username = $_GET['username'];
+        $useremail = $_GET['useremail'];
+        $userreason = $_GET['userreason'];
+        $usermessage = $_GET['usermessage'];
 
         $email_message .= "Name: " . $username . "\n";
         $email_message .= "Email: " . $useremail . "\n";
