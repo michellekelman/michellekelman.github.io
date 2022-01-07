@@ -125,11 +125,19 @@ html, body {
     font-size: 15px;
 }
 
-.links {
+.links, .pagelinks {
     margin: 40px;
-    margin-bottom: 10px;
     padding: 0px;
     list-style: none;
+}
+
+.links {
+    margin-bottom: 10px;
+}
+
+.pagelinks {
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 .email {
@@ -137,12 +145,12 @@ html, body {
     margin-top: 0px;
 }
 
-.links li {
+.links li, .pagelinks li {
     display: inline-block;
     margin: 5px;
 }
 
-.links a {
+.links a, .pagelinks a {
     text-decoration: none;
     color: rgba(118, 0, 87, 1);
 }
