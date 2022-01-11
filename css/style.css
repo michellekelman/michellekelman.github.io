@@ -88,6 +88,10 @@ html, body {
     text-align: center;
 }
 
+.return {
+    text-decoration: none;
+}
+
 .aboutme {
     margin: 20px;
     margin-bottom: 10px;
