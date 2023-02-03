@@ -684,7 +684,7 @@ button[type=submit]:hover {
 
 .email-button {
   height: 3rem;
-  width: 15rem;
+  width: 18rem;
   margin: auto;
   background-color: var(--button-color);
   color: var(--fourth-color);
@@ -758,6 +758,10 @@ button[type=email-button]:hover {
 
   .contact {
     padding: 3rem 3rem;
+  }
+
+  html {
+    font-size: 90%;
   }
 }
 
