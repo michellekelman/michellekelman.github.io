@@ -1,55 +1,325 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Michelle Kelman - Homepage</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Courier+Prime&display=swap" rel="stylesheet">
-    </head>
+<html lang="en">
+  <head>
+    <title>Michelle Kelman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
 
-    <body>
-        <div class="wrapper">
-            <div class="intro">
-                <a class="return" href=""><h1 class="name">Michelle Kelman</h1></a>
-                <div class="aboutme">
-                    <div class="pfsection">
-                        <img class="pfpic" src="img/profilepic.jpg" alt="profile-image">
-                    </div>
-                    <div class="biosection">
-                        <p class="bio">
-                            <b>Hello! I'm Michelle.</b><br><br>
-                            I am a <b>Junior</b> studying <b>Computer Science</b> at the <b>University of Texas at Dallas</b>, 
-                            and an incoming <b>Software Engineer Intern</b> at <b>Capital One</b>.
-                            I started coding in my sophomore year of high school, and have enjoyed learning more since then!<br><br>
-                            In addition to CS, I enjoy volunteering within the special needs community.
-                            I started volunteering when I was in middle school, and have since interned and worked for many special needs related organizations in the DFW area.
-                        </p>
-                    </div>
-                </div>
-            </div>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <a href=""><h1>Michelle Kelman</h1></a>
+      <ul class="navigation">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="./resources/MichelleKelman-Resume.pdf" class="nav-link">Resume</a></li>
+        <li>
+          <div class="toggle-container">
+            <label class="switch">
+              <input type="checkbox" onchange="lightMode()">
+              <span class="slider round"></span>
+            </label>
+        </div>
+        </li>
+      </ul>
+      <button class="burger-menu" id="burger-menu">
+        <i class="fa fa-navicon fa-1x"></i>
+      </button>
+    </nav>
 
-            <div class="contact">
-                <ul class="links">
-                    <li>
-                        <a href="https://www.linkedin.com/in/michelle-r-kelman/" class="fa fa-linkedin fa-2x"></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/michellekelman" class="fa fa-github fa-2x"></a>
-                    </li>
-                    <li>
-                        <a href="../resources/Resume - Personal Website - December 2021.pdf" class="fa fa-file-text fa-2x"></a>
-                    </li>
-                    <li>
-                        <a href="contact/" class="fa fa-envelope fa-2x"></a>
-                    </li>
-                </ul>
-                <div class="email">
-                    <a href="mailto:michelle.r.kelman@gmail.com">michelle.r.kelman@gmail.com</a>
-                </div>
+    <!-- Intro Section -->
+    <section class="intro" id="intro">
+      <img class="pfpic" src="resources/outside.jpg" alt="profile-image">
+        <div class="intro-container">
+          <p class="intro-text" id="intro-text"></p>
+          <h1 class="intro-title" id="intro-title">Michelle Kelman</h1>
+          <h2 class="intro-subtitle" id="intro-subtitle-1"></h2>
+          <h2 class="intro-subtitle" id="intro-subtitle-2"></h2>
+          <ul class="intro-links" id="intro-links">
+            <li><a href="https://www.linkedin.com/in/michelle-r-kelman/" class="fa fa-linkedin fa-2x"></a></li>
+            <li><a href="https://github.com/michellekelman" class="fa fa-github fa-2x"></a></li>
+            <li><a href="./resources/MichelleKelman-Resume.pdf" class="fa fa-file-text fa-2x"></a></li>
+            <li><a href="mailto:michelle.r.kelman@gmail.com" class="fa fa-envelope fa-2x"></a></li>
+          </ul>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <!-- Tab links -->
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'Education')" id="defaultOpen">Education</button>
+          <button class="tablinks" onclick="openTab(event, 'Current Employment')">Current Employment</button>
+          <button class="tablinks" onclick="openTab(event, 'Volunteer Work')">Volunteer Work</button>
+          <button class="tablinks" onclick="openTab(event, 'Honors and Awards')">Honors and Awards</button>
+        </div>
+        <!-- Tab content -->
+        <div id="Education" class="tabcontent">
+          <h3>The University of Texas at Dallas</h3>
+          <h4>Bachelor of Science in Computer Science</h4>
+          <h4>Expected Graduation May 2023</h4>
+          <ul class="additional-info">
+            <li>Computing Scholars Honors Program (CS<sup>2</sup>)</li>
+            <li>Fast Track Program - Master of Science in Computer Science - Intelligent Systems Track</li>
+            <li>Association of Computing Machinery – Education Mentor Program Mentee Fall 2020</li>
+          </ul>
+          <p>
+            <br>
+            I am a senior studying Computer Science with the Computing Scholars Honors Program (CS<sup>2</sup>) at the 
+            University of Texas at Dallas on track to graduate Spring 2023.
+            <br><br>
+            In addition to my current undergraduate studies, I am working towards my graduate degree in Computer Science 
+            through UTD's Fast Track program and on track to graduate in 2024.
+            <br><br>
+          </p>
+          <h3>Certifications</h3>
+          <ul class="additional-info">
+            <li><b>Amazon Web Services Certified Cloud Practitioner Certification</b> - May 2021</li>
+            <li><b>Cisco Certified Entry Networking Technician</b> - May 2019</li>
+          </ul>
+        </div>
+        <div id="Current Employment" class="tabcontent">
+          <h3>Incoming Software Engineer Associate</h3>
+          <h4>Capital One – Technology Development Program</h4>
+          <h4>Starting August 2023</h4>
+          <p>
+            <br>
+            After graduating with my Bachelor's degree, I plan to join Capital one as a Software Engineering Associate
+            through the Technology Development Program.
+          </p>
+        </div>
+        <div id="Volunteer Work" class="tabcontent">
+          <h3>National Autism Association of North Texas and My Possibilities</h3>
+          <h4>August 2015 – Present</h4>
+          <p>
+            <br>
+            In addition to programming, I enjoy volunteering within the special needs community. I started volunteering 
+            when I was in middle school, and have since interned and worked for many special needs related organizations 
+            in the DFW area.
+          </p>
+        </div>
+        <div id="Honors and Awards" class="tabcontent">
+          <ul class="additional-info">
+            <li><a href="https://www.utdallas.edu/deans-list/spring-2022/"><b>Dean’s List – UTD Office of Undergraduate Education</b></a> - Spring 2022</li>
+            <li><a href="https://www.utdallas.edu/deans-list/fall-2021/"><b>Dean’s List – UTD Office of Undergraduate Education</b></a> - Fall 2021</li>
+            <li><a href="https://news.utdallas.edu/students-teaching/axxess-scholars-2022/"><b>UTD Axxess Scholarship Recipient</b></a> - Fall 2021</li>
+            <li><a href="https://www.utdallas.edu/deans-list/spring-2021/"><b>Dean’s List – UTD Office of Undergraduate Education</b></a> - Spring 2021</li>
+            <li><b>National Merit Scholarship Program – Commended Scholar</b> - 2019</li>
+            <li><b>National Autism Association of North Texas Angel Award</b> - 2018</li>
+          </ul>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <div class="project-header">
+            <h3 class="project-title">Distributed CharCNN</h3>
+            <!-- medium link? -->
+          </div>
+          <h4 class="project-subtitle">Capital One - Technology Internship Program</h4>
+          <p class="project-details">
+            A custom distributed charCNN machine learning model with Dask and PyTorch 
+            supported by out-of-memory data loading from Snowflake to AWS S3 using SQL
+          </p>
+          <ul class="tech">
+            <li><img class="logo dask" src="resources/dask.svg" alt="dask-logo"></li>
+            <li><img class="logo pytorch" src="resources/pytorch.svg" alt="pytorch-logo"></li>
+            <li><img class="logo aws" src="resources/aws.svg" alt="aws-logo"></li>
+            <li><img class="logo sql" src="resources/sql.png" alt="sql-logo"></li>
+          </ul>
+        </div>
+        <div class="project-container project-card">
+          <div class="project-header">
+            <h3 class="project-title">michellekelman.github.io</h3>
+            <a href="https://github.com/michellekelman/michellekelman.github.io" class="fa fa-github fa-2x"></a>
+          </div>
+          <h4 class="project-subtitle">Personal Project</h4>
+          <p class="project-details">
+            Personal website for compiling my projects, experiences, resume, and contact information
+            and to practice my website development skills
+          </p>
+          <ul class="tech">
+            <li><img class="logo html" src="resources/html.svg" alt="html-logo"></li>
+            <li><img class="logo css" src="resources/css.svg" alt="css-logo"></li>
+            <li><img class="logo js" src="resources/js.png" alt="js-logo"></li>
+          </ul>
+        </div>
+        <div class="project-container project-card">
+          <div class="project-header">
+            <h3 class="project-title">Date Predictor Pro</h3>
+            <a href="https://github.com/michellekelman/date-predictor-pro" class="fa fa-github fa-2x"></a>
+          </div>
+          <h4 class="project-subtitle">Personal Project</h4>
+          <p class="project-details">
+            A date tracker and predictor that can be used for tracking medication refills, 
+            infrequent work meetings, or other events with irregular cycles
+          </p>
+          <ul class="tech">
+            <li><img class="logo html" src="resources/html.svg" alt="html-logo"></li>
+            <li><img class="logo python" src="resources/python.png" alt="python-logo"></li>
+          </ul>
+        </div>
+        <div class="project-container project-card">
+          <div class="project-header">
+            <h3 class="project-title">Temoc Eats</h3>
+            <a href="https://github.com/sashakap/HACKUTDIX_HJMS" class="fa fa-github fa-2x"></a>
+          </div>
+          <h4 class="project-subtitle">Hackathon Project</h4>
+          <p class="project-details">
+            Web application allowing users to budget and generate a shopping list 
+            for their next grocery trip while also managing their calorie and 
+            macronutrient intake
+          </p>
+          <ul class="tech">
+            <li><img class="logo html" src="resources/html.svg" alt="html-logo"></li>
+            <li><img class="logo css" src="resources/css.svg" alt="css-logo"></li>
+            <li><img class="logo react" src="resources/react.png" alt="react-logo"></li>
+            <li><img class="logo firebase" src="resources/firebase.png" alt="firebase-logo"></li>
+          </ul>
+        </div>
+      </div>
+      <a href="https://github.com/michellekelman"><h3 class="more-projects-title">More Projects</h3></a>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+      <h2 class="experience-title">Experience</h2>
+      <div class="timeline">
+        <div class="container content">
+          <h3>Incoming Software Engineer Associate</h3>
+          <h4>Capital One – Technology Development Program</h4>
+          <h4>Starting August 2023</h4>
+        </div>
+        <div class="container content">
+          <h3>Software Engineer Intern</h3>
+          <h4>Capital One – Technology Internship Program</h4>
+          <h4>June 2022 – August 2022</h4>
+          <ul class="responsibilities">
+            <li>Developed a custom distributed charCNN machine learning model with Dask and PyTorch</li>
+            <li>Implemented out-of-memory data loading from Snowflake to AWS S3 using SQL, Dask, and CUDA</li>
+            <li>Researched bigger-than-memory computations in collaboration with other interns and management</li>
+          </ul>
+        </div>
+        <div class="container content">
+          <h3>Website Manager</h3>
+          <h4>National Autism Association of North Texas</h4>
+          <h4>March 2021 – Present</h4>
+          <ul class="responsibilities">
+              <li>Maintained website including newsletter, calendar, and blog</li>
+              <li>Acquired quarterly articles and presentations related to the special needs community</li>
+              <li>Generated new ideas related to technology and media to improve outreach</li>
+          </ul>
+        </div>
+        <div class="container content">
+          <h3>Math and SAT/ACT Tutor</h3>
+          <h4>January 2020 – Present</h4>
+          <ul class="responsibilities">
+              <li>Assessed strengths, weaknesses, and learning styles of students to effectively write curriculum</li>
+              <li>Strengthened students’ understanding of relevant topics, including advanced test taking strategies</li>
+              <li>Motivated students to learn through engaging lessons and positive learning environments</li>
+          </ul>
+        </div>
+        <div class="container content">
+          <h3>Instructor</h3>
+          <h4>Mathnasium</h4>
+          <h4>January 2020 – May 2021</h4>
+          <ul class="responsibilities">
+              <li>Guided multiple students through daily lesson plans including advanced math topics</li>
+              <li>Improved students’ understanding of math topics based on their respective skill levels</li>
+              <li>Balanced lessons so that multiple students on different levels could be assisted at once</li>
+          </ul>
+        </div>
+        <div class="container content">
+          <h3>Intern</h3>
+          <h4>My Possibilities</h4>
+          <h4>June 2019 – August 2019</h4>
+          <ul class="responsibilities">
+              <li>Plano Mayor’s Summer Internship Program 2019 – competitive high school internship program</li>
+              <li>Performed routine office tasks to assist administration</li>
+              <li>Aided instructors with lessons and activities during classes</li>
+          </ul>
+        </div>
+        <div class="container content">
+          <h3>Volunteer</h3>
+          <h4>National Autism Association of North Texas</h4>
+          <h4>August 2015 – Present</h4>
+          <ul class="responsibilities">
+              <li>Facilitated Autism Social Groups with 10 individuals with disabilities</li>
+              <li>Assisted with setup and organization of informational meetings and organization events</li>
+              <li>Supervised 30+ volunteers at events with over 100 people</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <h3 class="contact-title">Contact</h3>
+      <div class="form">
+          <form class="contactform" action="https://formspree.io/f/mknygyzk" method="post">
+              <div class="formelement">
+                  <label class="label" for="name">Name:</label>
+                  <input class="input" type="text" id="name" name="name" placeholder="Required" required>
+              </div>
+              <div class="formelement">
+                  <label class="label" for="email">Email:</label>
+                  <input class="input" type="email" id="email" name="email" placeholder="Required" required>
+              </div>
+              <div class="formelement">
+                  <label class="label" for="reason">Reason:</label>
+                  <select class="input" id="reason" name="reason">
+                      <option value="">Select (Optional)</option>
+                      <option value="recruiting">Internship / Job Recruiting</option>
+                      <option value="college">Questions about Education</option>
+                      <option value="fun">Annoyance / Trolling</option>
+                      <option value="other">Other</option>
+                  </select>
+              </div>
+              <div class="formelement">
+                  <label class="label" for="message">Add a Message:</label>
+                  <textarea class="textbox" id="message" name="message" rows="3" maxlength="2000" placeholder="Optional"></textarea>
+              </div>
+              <div class="formelement">
+                  <button class="submit" type="submit"><h3>Submit</h3></button>
+              </div>
+          </form>
+          <p class="or">OR</p>
+          <div class="emaillink">
+              <button class="email-button" type="email-button"><a href="mailto:michelle.r.kelman@gmail.com"><h3>michelle.r.kelman@gmail.com</h3></a></button>
+          </div>
+      </div>
+    </section>
+
+    <!-- Scroll to top -->
+    <i class="scroll-up" id="scroll-up">
+      <img src="assets/icons/icons8-upward-arrow.gif" class="socicon up-arrow" alt=""/>
+      <i class="fa fa-arrow-circle-up fa-3x"></i>
+    </i>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="contact-footer">
+            <ul class="links">
+                <li><a href="https://www.linkedin.com/in/michelle-r-kelman/" class="fa fa-linkedin fa-2x"></a></li>
+                <li><a href="https://github.com/michellekelman" class="fa fa-github fa-2x"></a></li>
+                <li><a href="./resources/MichelleKelman-Resume.pdf" class="fa fa-file-text fa-2x"></a></li>
+                <li><a href="mailto:michelle.r.kelman@gmail.com" class="fa fa-envelope fa-2x"></a></li>
+            </ul>
+            <div class="email">
+                Made with ❤🐻‍❄️ by <a href="mailto:michelle.r.kelman@gmail.com">Michelle Kelman</a>
             </div>
         </div>
-    </body>
+    </footer>
+
+    <!-- Website scripts -->
+    <script src="js/app.js"></script>
+  </body>
 </html>

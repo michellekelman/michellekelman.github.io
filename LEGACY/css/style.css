@@ -1,0 +1,157 @@
+html, body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+
+    font-family: 'Courier Prime', monospace;
+    color: white;
+
+    background: black;
+}
+
+@media screen and (min-width: 600px) {
+    html, body {
+        background-image: url("../img/codebackground2.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+}
+
+.wrapper {
+    width: 90%;
+    height: 90%;
+    margin: 0px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: top;
+    align-items: center;
+}
+
+@media screen and (min-width: 960px) and (min-height: 660px) {
+    .wrapper {
+        width: 70%;
+        height: 90%;
+        margin: 30px;
+    
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1120px) and (min-height: 740px) {
+    .wrapper {
+        width: 50%;
+        height: 90%;
+        margin: 30px;
+    
+        justify-content: center;
+    }
+}
+
+.intro, .contact {
+    background-color: rgba(0, 0, 0, 1);
+
+    margin: 30px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    border-style: solid;
+}
+
+.intro {
+    border-color: rgba(255, 0, 102, 1);
+}
+
+.contact {
+    border-color: rgba(167, 0, 226, 1);
+}
+
+.name {
+    margin: 40px;
+    margin-bottom: 0px;
+
+    color: rgba(255, 51, 204, 1);
+    font-size: 45px;
+
+    text-align: center;
+}
+
+.return {
+    text-decoration: none;
+}
+
+.aboutme {
+    margin: 20px;
+    margin-bottom: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (min-width: 850px) {
+    .aboutme {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.pfsection, .biosection {
+    margin: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pfpic {
+    object-fit: cover;
+
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+}
+
+.bio {
+    font-size: 15px;
+}
+
+.links {
+    margin: 40px;
+    margin-bottom: 10px;
+    padding: 0px;
+    list-style: none;
+}
+
+.email {
+    margin: 40px;
+    margin-top: 0px;
+}
+
+.links li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.links a {
+    text-decoration: none;
+    color: rgba(118, 0, 87, 1);
+}
+
+.email a {
+    color: rgba(118, 0, 87, 1);
+    text-decoration: none;
+}
