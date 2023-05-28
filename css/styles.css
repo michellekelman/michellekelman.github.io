@@ -6,16 +6,16 @@
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
-  --bg-color: #292123;
-  --bg-color-2: #3b3335;
-  --bg-color-3: #443c3e;
-  --first-color: #9B92BF;
-  --second-color: #b931b9;
-  --third-color: #c58ac4;
-  --fourth-color: #FCECD9;
-  --fifth-color: #8EC13E;
-  --light-color: #FCECD9;
-  --button-color: #b931b9;
+  --bg-color: #090f2f;
+  --bg-color-2: #1a1f3c;
+  --bg-color-3: #2a2f4f;
+  --first-color: #b49dd8;
+  --second-color: #d47097;
+  --third-color: #dfa4bb;
+  --fourth-color: #f5edce;
+  --fifth-color: #89c4e1;
+  --light-color: #f5edce;
+  --button-color: #d47097;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 3rem;
   --line-height: 2rem;
@@ -23,16 +23,16 @@
 /* Variables end */
 
 .light-mode {
-  --bg-color: #faf0e4;
-  --bg-color-2: #ebddcd;
-  --bg-color-3: #f1e4d4;
-  --first-color: #605391;
-  --second-color: #790c79;
-  --third-color: #be25bc;
-  --fourth-color: #251b1e;
-  --fifth-color: #80c216;
-  --light-color: #faf0e4;
-  --button-color: #be25bc;
+  --bg-color: #e5f3f9;
+  --bg-color-2: #d2e8f1;
+  --bg-color-3: #c7e1eb;
+  --first-color: #5d4397;
+  --second-color: #bb0d52;
+  --third-color: #d3457b;
+  --fourth-color: #0a0e23;
+  --fifth-color: #3c94c1;
+  --light-color: #e5f3f9;
+  --button-color: #d3457b;
 }
 
 html {
@@ -390,6 +390,10 @@ input:checked + .slider:before {
   margin-bottom: var(--bottom-margin);
 }
 
+.icons {
+  word-spacing: 0.5rem;
+}
+
 .project-subtitle {
   margin-bottom: var(--bottom-margin);
 }
@@ -409,7 +413,8 @@ input:checked + .slider:before {
 
 .logo {
   margin-top: var(--bottom-margin);
-  filter: invert(64%) sepia(83%) saturate(327%) hue-rotate(41deg) brightness(92%) contrast(91%);
+  filter: invert(43%) sepia(72%) saturate(360%) hue-rotate(156deg) brightness(94%) contrast(91%);
+  /*filter: invert(64%) sepia(83%) saturate(327%) hue-rotate(41deg) brightness(92%) contrast(91%);*/
   justify-content: center;
   align-items: center;
 }
@@ -452,6 +457,22 @@ input:checked + .slider:before {
 
 .firebase {
   height: 1.5rem;
+}
+
+.sklearn {
+  height: 1.6rem;
+}
+
+.keras {
+  height: 1.4rem;
+}
+
+.unity {
+  height: 2.5rem;
+}
+
+.csharp {
+  height: 1.6rem;
 }
 
 .project-card {
@@ -700,7 +721,7 @@ button[type=email-button]:hover {
 /* Contact section ends */
 
 /* Media queries for responsiveness */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   nav {
     padding: 2rem 2rem;
   }
