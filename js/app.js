@@ -48,7 +48,7 @@ let j = 0;
 let k = 0;
 let txt1 = 'Hey, there! My name is'; /* The text */
 let txt2 = 'Incoming Software Engineer Associate at Capital One'; /* The text */
-let txt3 = 'Computing Honors Scholar at the University of Texas at Dallas'; /* The text */
+let txt3 = 'Graduate Student at the University of Texas at Dallas'; /* The text */
 let speed = 50; /* The speed/duration of the effect in milliseconds */
 
 function typeWriter1() {
