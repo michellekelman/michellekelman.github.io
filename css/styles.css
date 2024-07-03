@@ -10,12 +10,12 @@
   --bg-color-2: #1a1f3c;
   --bg-color-3: #2a2f4f;
   --first-color: #b49dd8;
-  --second-color: #d47097;
-  --third-color: #dfa4bb;
+  --second-color: #ca3e3e;
+  --third-color: #ca8e6e;
   --fourth-color: #f5edce;
-  --fifth-color: #89c4e1;
+  --fifth-color: #df5f1b;
   --light-color: #f5edce;
-  --button-color: #d47097;
+  --button-color: #d43232;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 3rem;
   --line-height: 2rem;
@@ -27,12 +27,12 @@
   --bg-color-2: #d2e8f1;
   --bg-color-3: #c7e1eb;
   --first-color: #5d4397;
-  --second-color: #bb0d52;
-  --third-color: #d3457b;
+  --second-color: #bc2222;
+  --third-color: #e5763b;
   --fourth-color: #0a0e23;
-  --fifth-color: #3c94c1;
+  --fifth-color: #df5f1b;
   --light-color: #e5f3f9;
-  --button-color: #d3457b;
+  --button-color: #e5763b;
 }
 
 html {
@@ -413,7 +413,9 @@ input:checked + .slider:before {
 
 .logo {
   margin-top: var(--bottom-margin);
-  filter: invert(43%) sepia(72%) saturate(360%) hue-rotate(156deg) brightness(94%) contrast(91%);
+  /*https://codepen.io/sosuke/pen/Pjoqqp*/
+  filter: invert(46%) sepia(43%) saturate(5128%) hue-rotate(357deg) brightness(95%) contrast(83%);
+  /*filter: invert(43%) sepia(72%) saturate(360%) hue-rotate(156deg) brightness(94%) contrast(91%);*/
   /*filter: invert(64%) sepia(83%) saturate(327%) hue-rotate(41deg) brightness(92%) contrast(91%);*/
   justify-content: center;
   align-items: center;
