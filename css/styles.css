@@ -6,16 +6,16 @@
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
-  --bg-color: #090f2f;
-  --bg-color-2: #1a1f3c;
-  --bg-color-3: #2a2f4f;
+  --bg-color: #100a1b;
+  --bg-color-2: #291C39;
+  --bg-color-3: #3c2a4f;
   --first-color: #b49dd8;
-  --second-color: #ca3e3e;
-  --third-color: #ca8e6e;
-  --fourth-color: #f5edce;
-  --fifth-color: #df5f1b;
-  --light-color: #f5edce;
-  --button-color: #d43232;
+  --second-color: #ca3e6f;
+  --third-color: #52aa81;
+  --fourth-color: #f6f1de;
+  --fifth-color: #da668f;
+  --light-color: #f6f1de;
+  --button-color: #b62e5d;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 3rem;
   --line-height: 2rem;
@@ -23,16 +23,16 @@
 /* Variables end */
 
 .light-mode {
-  --bg-color: #e5f3f9;
-  --bg-color-2: #d2e8f1;
-  --bg-color-3: #c7e1eb;
+  --bg-color: #efebf1;
+  --bg-color-2: #E2DBE7;
+  --bg-color-3: #d5cadd;
   --first-color: #5d4397;
-  --second-color: #bc2222;
-  --third-color: #e5763b;
-  --fourth-color: #0a0e23;
-  --fifth-color: #df5f1b;
-  --light-color: #e5f3f9;
-  --button-color: #e5763b;
+  --second-color: #ad3b63;
+  --third-color: #2FA179;
+  --fourth-color: #140e07;
+  --fifth-color: #bb5277;
+  --light-color: #eceae4;
+  --button-color: #da7196;
 }
 
 html {
@@ -246,6 +246,7 @@ input:checked + .slider:before {
 .intro-subtitle {
   margin-bottom: var(--bottom-margin);
   line-height: var(--line-height);
+  color: var(--third-color);
 }
 
 .intro-links {
@@ -414,7 +415,9 @@ input:checked + .slider:before {
 .logo {
   margin-top: var(--bottom-margin);
   /*https://codepen.io/sosuke/pen/Pjoqqp*/
-  filter: invert(46%) sepia(43%) saturate(5128%) hue-rotate(357deg) brightness(95%) contrast(83%);
+  /*lower invert for logo contrast*/
+  filter: invert(30%) sepia(100%) saturate(324%) hue-rotate(110deg) brightness(93%) contrast(91%);
+  /*filter: invert(46%) sepia(43%) saturate(5128%) hue-rotate(357deg) brightness(95%) contrast(83%);*/
   /*filter: invert(43%) sepia(72%) saturate(360%) hue-rotate(156deg) brightness(94%) contrast(91%);*/
   /*filter: invert(64%) sepia(83%) saturate(327%) hue-rotate(41deg) brightness(92%) contrast(91%);*/
   justify-content: center;
