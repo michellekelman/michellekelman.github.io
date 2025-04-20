@@ -47,8 +47,8 @@ let i = 0;
 let j = 0;
 let k = 0;
 let txt1 = 'Hey, there! My name is'; /* The text */
-let txt2 = 'Software Engineer Associate at Capital One'; /* The text */
-let txt3 = 'Graduate Student at the University of Texas at Dallas'; /* The text */
+let txt2 = 'Software Engineer'; /* The text */
+// let txt3 = 'Graduate Student at the University of Texas at Dallas'; /* The text */
 let speed = 50; /* The speed/duration of the effect in milliseconds */
 
 function typeWriter1() {
@@ -85,6 +85,7 @@ function typeWriter2() {
 }
 setTimeout(typeWriter2, ((txt1.length*speed)+(20*100)+(2*1000)));
 
+/*
 function typeWriter3() {
   if (k < txt3.length) {
     document.getElementById("intro-subtitle-2").innerHTML += txt3.charAt(k);
@@ -93,6 +94,7 @@ function typeWriter3() {
   }
 }
 setTimeout(typeWriter3, ((txt1.length*speed)+(20*100)+(txt2.length*speed)+(3*1000)));
+*/
 
 var opacity2 = 0;
 var intervalID2 = 0;
@@ -108,7 +110,8 @@ function fadeIn2() {
       }
   }, 100);
 }
-setTimeout(fadeIn2, ((txt1.length*speed)+(20*100)+(txt2.length*speed)+(txt3.length*speed)+(4*1000)));
+// setTimeout(fadeIn2, ((txt1.length*speed)+(20*100)+(txt2.length*speed)+(txt3.length*speed)+(4*1000)));
+setTimeout(fadeIn2, ((txt1.length*speed)+(20*100)+(txt2.length*speed)+(3*1000)));
 
 document.getElementById("defaultOpen").click();
 
